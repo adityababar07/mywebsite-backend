@@ -1,0 +1,10 @@
+Django==3.0
+markdown 
+django-filter
+djangorestframework
+django-cors-headers
+pylint-django
+pillow
+psycopg2-binary
+pylint
+gunicorn
