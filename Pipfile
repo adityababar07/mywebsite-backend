@@ -17,6 +17,7 @@ gunicorn = "*"
 dj-database-url = "*"
 whitenoise = "*"
 autopep8 = "*"
+cloudinary = "*"
 
 [dev-packages]
 pylint = "*"

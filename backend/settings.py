@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'corsheaders',
+    'cloudinary',
     'homepage.apps.HomepageConfig',
 ]
 
@@ -156,3 +157,10 @@ REST_FRAMEWORK = {
 
 #enviornment
 ENVIRONMENT = os.environ.get('ENVIRONMENT', default='development')
+
+# Cloudinary settings for Django.
+CLOUDINARY = {
+  'cloud_name': 'ddurzxbw0',  
+  'api_key': '298863286693199',  
+  'api_secret': '89FQ4f9tfmQJwul0i7a60d055Cw',  
+}
