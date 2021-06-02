@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'corsheaders',
+    'cloudinary_storage',
     'cloudinary',
     'homepage.apps.HomepageConfig',
 ]
@@ -159,8 +160,11 @@ REST_FRAMEWORK = {
 ENVIRONMENT = os.environ.get('ENVIRONMENT', default='development')
 
 # Cloudinary settings for Django.
-CLOUDINARY = {
-  'cloud_name': 'ddurzxbw0',  
-  'api_key': '298863286693199',  
-  'api_secret': '89FQ4f9tfmQJwul0i7a60d055Cw',  
+CLOUDINARY_STORAGE = {
+  'CLOUD_NAME': 'ddurzxbw0',  
+  'API_KEY': '298863286693199',  
+  'API_SECRET': '89FQ4f9tfmQJwul0i7a60d055Cw',
 }
+
+# Default django media file storage
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'

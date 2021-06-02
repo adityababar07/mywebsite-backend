@@ -18,6 +18,7 @@ dj-database-url = "*"
 whitenoise = "*"
 autopep8 = "*"
 cloudinary = "*"
+dj3-cloudinary-storage = "*"
 
 [dev-packages]
 pylint = "*"
