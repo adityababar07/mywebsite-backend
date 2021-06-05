@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'cloudinary_storage',
     'cloudinary',
     'homepage.apps.HomepageConfig',
+    'service.apps.ServiceConfig',
 ]
 
 MIDDLEWARE = [
@@ -150,6 +151,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 REST_FRAMEWORK = {
     # Use Django's standard `django.contrib.auth` permissions,
     # or allow read-only access for unauthenticated users.
+    'DATETIME_FORMAT': "%b %d %Y, %I:%M %P",
     'DEFAULT_PERMISSION_CLASSES': [
         'rest_framework.permissions.AllowAny',
     ]
