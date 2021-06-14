@@ -1,15 +1,22 @@
-# Commands for setting up sql database 
+<h1>This Is My Portfolio Webpage. :)</h1>
+<p>
+    This is a website built using react.js and django.
+    <p>
+        <ol>
+            <li>React for frontend</li>
+            <li>Django for backend</li>
+        </ol>
+    </p>
+    <p>
+    frontend would be hosted on firebase and backend on heroku 
+    </p>
+</p>
 
-1. sudo service postgresql start
-2. sudo passwd postgres
-3. su postgres
-4. psql
-5. create user "adityababar07" with encrypted password '149489';
-6. create database mywebsite;
-7. grant all privileges on database mywebsite to adityababar07;
+# Deploying to firebase with comment
+firebase deploy --only hosting -m "Deploying the best new feature ever."
 
-# Commands for migrations
+# Delete database in heroku
 
-1. python manage.py makemigrations appname
-2. python manage.py migrate appname
-3. python manage.py runserver
+1. heroku pg:reset DATABASE_URL
+2. heroku run python manage.py ------
+3. heroku restart

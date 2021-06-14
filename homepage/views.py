@@ -2,8 +2,8 @@ from django.shortcuts import render
 from django.views.generic import TemplateView
 from rest_framework.generics import ListCreateAPIView, RetrieveUpdateDestroyAPIView
 from .serializer import ProjectSerializer
-from django.urls import reverse_lazy
 from .models import Project
+from django.urls import reverse_lazy
 # Create your views here.
 
 
