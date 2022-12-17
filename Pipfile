@@ -6,7 +6,7 @@ name = "pypi"
 [packages]
 django-filter = "*"
 djangorestframework = "*"
-Django = "==3.0"
+Django = "3.0"
 Markdown = "*"
 django-cors-headers = "*"
 pylint-django = "*"
@@ -19,6 +19,7 @@ whitenoise = "*"
 autopep8 = "*"
 cloudinary = "*"
 dj3-cloudinary-storage = "*"
+firebase-admin = "*"
 
 [dev-packages]
 pylint = "*"
