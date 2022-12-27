@@ -1,3 +1,8 @@
 .vscode
 media
 adityababar-me-firebase-adminsdk-u55nx-12a3a2307b.json
+Procfile
+node_modules
+package.json
+package-lock.json
+firebase.py
