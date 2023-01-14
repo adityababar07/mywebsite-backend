@@ -19,7 +19,7 @@ whitenoise = "*"
 autopep8 = "*"
 cloudinary = "*"
 dj3-cloudinary-storage = "*"
-firebase-admin = "*"
+
 
 [dev-packages]
 pylint = "*"
