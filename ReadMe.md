@@ -12,6 +12,11 @@
     </p>
 </p>
 
+
+# for creating super user
+
+pthon manage.py createsuperuser
+
 # Deploying to firebase with comment
 firebase deploy --only hosting -m "Deploying the best new feature ever."
 
