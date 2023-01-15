@@ -100,7 +100,7 @@ DATABASES = {
         'USER': 'adityababar07',
         'PASSWORD' : ';.idT0`TT+GfoPS',
         'HOST' : 'adityababar07.mysql.pythonanywhere-services.com',
-        'PORT' : '5432'
+        # 'PORT' : '5432'
     }
 }
 
