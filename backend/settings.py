@@ -103,7 +103,7 @@ DATABASES = {
         'USER': 'adityababar07',
         'PASSWORD' : ';.idT0`TT+GfoPS',
         'HOST' : 'adityababar07.mysql.pythonanywhere-services.com',
-        # 'HOST' : 'localhost',
+        'HOST' : 'localhost',
         'PORT' : '3306'
     }
 }
@@ -175,3 +175,4 @@ CLOUDINARY_STORAGE = {
 
 # Default django media file storage
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
+# DEFAULT_FILE_STORAGE = 
