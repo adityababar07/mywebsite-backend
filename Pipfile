@@ -20,6 +20,7 @@ autopep8 = "*"
 cloudinary = "*"
 dj3-cloudinary-storage = "*"
 mysqlclient = "*"
+cloudinary-cli = "*"
 
 
 [dev-packages]

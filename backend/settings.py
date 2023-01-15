@@ -71,6 +71,9 @@ CORS_ORIGIN_ALLOW_ALL = True
 
 ROOT_URLCONF = 'backend.urls'
 
+LOGIN_REDIRECT_URL = 'home'
+LOGOUT_REDIRECT_URL = 'home'
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
@@ -99,7 +102,8 @@ DATABASES = {
         'NAME': 'adityababar07$mywebsite',
         'USER': 'adityababar07',
         'PASSWORD' : ';.idT0`TT+GfoPS',
-        'HOST' : 'adityababar07.mysql.pythonanywhere-services.com',
+        # 'HOST' : 'adityababar07.mysql.pythonanywhere-services.com',
+        'HOST' : 'localhost',
         'PORT' : '3306'
     }
 }
@@ -166,6 +170,7 @@ CLOUDINARY_STORAGE = {
   'CLOUD_NAME': 'ddurzxbw0',  
   'API_KEY': '298863286693199',  
   'API_SECRET': '89FQ4f9tfmQJwul0i7a60d055Cw',
+  'CLOUDINARY_URL' : 'cloudinary://298863286693199:89FQ4f9tfmQJwul0i7a60d055Cw@ddurzxbw0',
 }
 
 # Default django media file storage
