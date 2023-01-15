@@ -174,6 +174,7 @@ CLOUDINARY_STORAGE = {
 # Default django media file storage
 try:
     DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
+    MEDIA_URL = DEFAULT_FILE_STORAGE
 
 except:
     MEDIA_URL = '/media/'
