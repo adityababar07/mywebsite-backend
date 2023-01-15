@@ -26,7 +26,7 @@ SECRET_KEY = 'm1)0w7v87xj-ok4m5%$k65xe=8ig20-1ae002y53kc4a+5q^c6'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['web-production-66ba.up.railway.app', '.railway.app','.vercel.app', '.now.sh','mywebsite-backend-qa5jdlawo-adityababar07.vercel.app','mywebsite-backend.vercel.app','localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['adityababar07.pythonanywhere.com', 'localhost', '127.0.0.1']
 
 
 # Application definition
