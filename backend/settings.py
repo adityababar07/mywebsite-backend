@@ -99,7 +99,7 @@ DATABASES = {
         'NAME': 'mywebsite',
         'USER': 'adityababar07',
         'PASSWORD' : ';.idT0`TT+GfoPS',
-        'HOST' : 'localhost',
+        'HOST' : 'adityababar07.mysql.pythonanywhere-services.com',
         'PORT' : '5432'
     }
 }
