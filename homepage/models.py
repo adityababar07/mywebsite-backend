@@ -8,11 +8,7 @@ class Project(models.Model):
     project_id = models.AutoField(primary_key=True)
     project_name = models.CharField(max_length=50)
     project_description = models.TextField(max_length=500)
-    try:
-        project_image = models.ImageField(upload_to="project_screenshot/") 
-    except requests.exceptions.ConnectionError as e:
-        project_image = models.ImageField(upload_to=False)
-
+    project_image = models.ImageField(upload_to="project_screenshot/") 
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
