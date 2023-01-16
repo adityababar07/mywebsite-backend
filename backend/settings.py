@@ -149,6 +149,8 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 REST_FRAMEWORK = {
     # Use Django's standard `django.contrib.auth` permissions,
@@ -164,19 +166,14 @@ REST_FRAMEWORK = {
 ENVIRONMENT = os.environ.get('ENVIRONMENT', default='development')
 
 # Cloudinary settings for Django.
-CLOUDINARY_STORAGE = {
-  'CLOUD_NAME': 'ddurzxbw0',  
-  'API_KEY': '298863286693199',  
-  'API_SECRET': '89FQ4f9tfmQJwul0i7a60d055Cw',
-  'CLOUDINARY_URL' : 'cloudinary://298863286693199:89FQ4f9tfmQJwul0i7a60d055Cw@ddurzxbw0',
-}
+# CLOUDINARY_STORAGE = {
+#   'CLOUD_NAME': 'ddurzxbw0',  
+#   'API_KEY': '298863286693199',  
+#   'API_SECRET': '89FQ4f9tfmQJwul0i7a60d055Cw',
+#   'CLOUDINARY_URL' : 'cloudinary://298863286693199:89FQ4f9tfmQJwul0i7a60d055Cw@ddurzxbw0',
+# }
 
 # Default django media file storage
-try:
-    DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
-    MEDIA_URL = DEFAULT_FILE_STORAGE
+# try:
+#     DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
-except:
-    MEDIA_URL = '/media/'
-    MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-# DEFAULT_FILE_STORAGE = 
