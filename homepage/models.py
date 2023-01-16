@@ -8,7 +8,7 @@ class Project(models.Model):
     project_id = models.AutoField(primary_key=True)
     project_name = models.CharField(max_length=50)
     project_description = models.TextField(max_length=500)
-    project_image = models.TextField(max_length=500) 
+    project_image = models.CharField(max_length=500) 
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
